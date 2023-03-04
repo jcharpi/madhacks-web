@@ -28,6 +28,10 @@ body {
   padding: 3rem;
 }
 
+.select--card:hover {
+  cursor: pointer;
+}
+
 .select--container {
   padding: 1.5rem;
 }
@@ -42,5 +46,5 @@ body {
   font-family: 'IBM Plex Sans', sans-serif;
   font-weight: 300;
   font-size: 3rem;
-  padding: 1rem;
+  padding: .25rem;
 }
