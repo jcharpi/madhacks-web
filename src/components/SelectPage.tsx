@@ -1,8 +1,7 @@
-import React from "react";
 import { Container, Row } from "react-bootstrap";
 import ExerciseCard from "./ExerciseCard"
 export default function SelectPage() {
-
+    
     let exercises: string[] = ["Run", "Walk", "Jog", "Dance", "Swim", "Hike", "Jump"]
 
     return (
