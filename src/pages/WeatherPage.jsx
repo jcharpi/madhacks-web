@@ -1,6 +1,6 @@
 import React from 'react';
 import './weather.css';
-import { Card, Button } from 'semantic-ui-react';
+import { Button } from 'semantic-ui-react';
 import moment from 'moment';
 
 const refresh = () => {

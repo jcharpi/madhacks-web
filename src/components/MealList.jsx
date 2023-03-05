@@ -1,6 +1,6 @@
 import React from "react"
 import Meal from "./Meal"
-import "./nutrition.css";
+import "../pages/nutrition.css";
 
 export default function MealList({ mealData }) {
     if (!mealData) {

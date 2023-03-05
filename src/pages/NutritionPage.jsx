@@ -1,6 +1,6 @@
 import React, { useState } from "react"
-import MealList from "./MealList"
-import "./nutrition.css";
+import MealList from "../components/MealList"
+//import "./nutrition.css";
 
 function NutritionCard() {
   const [mealData, setMealData] = useState(null)

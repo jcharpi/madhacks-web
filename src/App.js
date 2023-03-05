@@ -1,15 +1,13 @@
-import Navbar from "./Navbar";
-import Home from "./pages/Home";
-import Weather from "./pages/Weather";
-import Nutrition from "./pages/Nutrition";
+import Navbar from "./components/Navbar";
+import Weather from "./pages/WeatherPage";
+import Nutrition from "./pages/NutritionPage";
 import SelectPage from './pages/SelectPage';
-import Login from './components/Login';
-import Dashboard from './components/Dashboard/Dashboard';
-import Preferences from './components/Preferences/Preferences';
+import Login from './pages/LoginPage';
 import useToken from './components/useToken';
-import { Route, Routes, Switch } from "react-router-dom"
+import { Route, Routes } from "react-router-dom"
 import { useEffect, useState } from "react";
 import { Dimmer, Loader } from 'semantic-ui-react';
+import MapPage from "./pages/MapPage";
 
 function App() {
 
@@ -54,8 +52,8 @@ function App() {
                     setToken={setToken}
                     />}
                     />
-            <Route path="/" element={<Home />} />
-            <Route path="/exercise" element={<SelectPage />} />
+            <Route path="/" element={<SelectPage />} />
+            <Route path="/exercise" element={<MapPage />} />
             <Route path="/weather" element={<Weather weatherData={data}/>} />
             <Route path="/nutrition" element={<Nutrition />} />
           </Routes>
