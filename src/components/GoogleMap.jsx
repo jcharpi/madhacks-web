@@ -30,7 +30,9 @@ function Map(props) {
       ? 
       <h6>loading</h6> 
       : 
-      props.nearbyPlaces.map((place) => (<InfoWindowF key={place.name} position={place.geometry.location}>
+      props.nearbyPlaces.map((place) => (<InfoWindowF options={{
+        outline: "none",
+      }} className="info-window-container" key={place.name} position={place.geometry.location}>
             <>
               <h6>{place.name}</h6>
               <p>{`Rating: ${place.rating}/5 ⭐️`}</p>
