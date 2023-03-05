@@ -13,8 +13,7 @@ const ExerciseCard = (props: Props) => {
 
     function handleClick(event: React.MouseEvent<HTMLDivElement>) {
         if (event.target instanceof HTMLDivElement) {
-            console.log('Card clicked');
-    setIsFlipped(prev => !prev);
+            setIsFlipped(prev => !prev);
         }
     }
 

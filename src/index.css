@@ -4,14 +4,16 @@
 
 body {
   background-color: purple;
-  color: white;
   padding: 1rem;
 }
 
+
+/* SELECT PAGE */
 .select--title {
   text-align: center;
   font-weight: 500;
   font-size: 4rem;
+  color: white;
 }
 
 .select--col {
@@ -78,5 +80,24 @@ input {
 
 .center--align {
   margin: auto 0;
+}
+
+
+
+
+/* MAP PAGE */
+.map--card--header {
+  font-size: 2rem;
+}
+
+.map--card {
+  width: 20rem;
+  height: 95vh;
+  border-radius: 0px;
+}
+
+.center--map {
+  display: flex;
+  justify-content: center;
 }
 
